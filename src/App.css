@@ -1,0 +1,273 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bg-container {
+  min-height: 100vh;
+  padding: 30px;
+  background-color: #9ba9eb;
+}
+
+.app-logo {
+  height: 50px;
+}
+
+.add-password-section {
+  background-color: #5763a5;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: ;
+  margin-top: 20px;
+}
+@media screen and (min-width: 768px) {
+  .add-password-section {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.password-form {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #454f84;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .password-form {
+    width: 440px;
+  }
+}
+
+.form-heading {
+  font-size: 26px;
+  color: white;
+}
+
+.input-container {
+  background-color: #f8fafc;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  padding: ;
+  border-radius: 6px;
+}
+
+.input-icon {
+  height: 30px;
+  margin: 10px;
+  margin-right: 0;
+}
+
+.line {
+  color: black;
+  background-color: black;
+  align-self: stretch;
+}
+
+.input {
+  flex-grow: 1;
+  background-color: transparent;
+  outline: none;
+  border-width: 0;
+  border-left: 2px solid #94a3b8;
+  height: 50px;
+  padding: 14px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+::placeholder {
+  font-size: 16px;
+}
+
+.add-btn {
+  width: 90px;
+  height: 35px;
+  border-radius: 6px;
+  margin-top: 14px;
+  align-self: flex-end;
+  border-width: 0;
+  background-color: #0b69ff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 2s;
+  font-weight: 500;
+}
+
+.add-btn:hover {
+  background-color: crimson;
+}
+
+.password-manager-image1 {
+  height: 300px;
+  align-self: center;
+}
+.password-manager-image2 {
+  display: none;
+  height: 400px;
+}
+@media screen and (min-width: 768px) {
+  .password-manager-image1 {
+    display: none;
+  }
+  .password-manager-image2 {
+    display: inline-block;
+  }
+}
+
+.password-details-section {
+  background-color: #5763a5;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: ;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.search-and-password-no-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-heading {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+.list-count {
+  background-color: white;
+  width: 40px;
+  height: 24px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.search-input-container {
+  background-color: #f8fafc;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  border-radius: 3px;
+  height: 30px;
+}
+
+.search-input-icon {
+  height: 20px;
+  margin-left: 10px;
+}
+
+.search-input {
+  height: 100%;
+  border: 0;
+  outline: none;
+}
+
+.password-empty-image1 {
+  height: 300px;
+  align-self: center;
+}
+
+.no-password-paragraph {
+  align-self: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.box-list-container {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .box-list-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.password-box {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+@media (min-width: 768px) {
+  .password-box {
+    width: 300px;
+  }
+}
+.username-first-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+
+.details-box {
+  margin-left: 20px;
+}
+.box-detail-paragraph {
+  margin: 2px;
+  color: #f8fafc;
+}
+.delete-btn {
+  background-color: transparent;
+  border-width: 0;
+  margin-left: auto;
+}
+.delete-icon-image {
+  height: 30px;
+}
+
+.check-box-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px 0px 20px 0px;
+}
+input#check {
+  margin-right: 10px;
+  height: 0px;
+  height: 20px;
+  width: 20px;
+  color: #0b69ff;
+}
+.label {
+  color: white;
+}
+
+.masked-image {
+  height: 14px;
+}
